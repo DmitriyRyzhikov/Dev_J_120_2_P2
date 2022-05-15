@@ -63,11 +63,11 @@ public class Analyzer {
         String t4 = Titles.TITLE_SUBHEADER_1.getTitleStr();
         String t5 = Titles.TITLE_SUBHEADER_2.getTitleStr();
         System.out.println(t1+t2+t3+t4+t5);
-        Starter.getReport1().forEach((x, y) -> System.out.printf("%30s |    %-4d     |   %f\n", x, y,  y / (double)Starter.getList().size()));
+        Starter.getReport1().forEach((x, y) -> System.out.printf("%30s |    %-4d    |   %f\n", x, y,  y / (double)Starter.getList().size()));
         System.out.println(Titles.TITLE_ENDER.getTitleStr());       
         String t6 = Titles.TITLE_HEADER_2.getTitleStr();
         System.out.println(t6+t2+t3+t4+t5);
-        Starter.getReport2().forEach((x, y) -> System.out.printf("%30s |    %-4d    |   %f\n", x, y,  y / (double)Starter.getList().size()));
+        Starter.getReport2().forEach((x, y) -> System.out.printf("%30s |    %-4d   |   %f\n", x, y,  y / (double)Starter.getList().size()));
         System.out.println(Titles.TITLE_ENDER.getTitleStr());
         
     } 
