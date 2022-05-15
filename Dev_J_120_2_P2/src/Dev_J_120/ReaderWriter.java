@@ -28,7 +28,7 @@ public class ReaderWriter {
             fileName = bf.readLine().trim();
            }
         catch (IOException ex){
-            System.out.println("При вводе в консоль что-то пошло не так...");
+            System.out.println("При вводе в консоль что-то пошло не так");
         }
         return fileName;
     }
@@ -71,7 +71,7 @@ public class ReaderWriter {
             {
             pw1.write(Titles.TITLE_HEADER_1.getTitleStr());
             pw1.write("\n     Файл: " + Starter.getTextFile());
-            pw1.write("\n     Количество слов в исходном тексте: " + Starter.getList().size());
+            pw1.write("\n     Количество слов в тексте: " + Starter.getList().size());
             pw1.write(Titles.TITLE_SUBHEADER_1.getTitleStr()); 
             pw1.write(Titles.TITLE_SUBHEADER_2.getTitleStr() + "\n");
             map1.forEach((x, y) -> {
