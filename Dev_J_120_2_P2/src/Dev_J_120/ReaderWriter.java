@@ -52,7 +52,7 @@ public class ReaderWriter {
             list.add(sc.useDelimiter("[…«»—–©\\h\\p{Space}\\p{Punct}\\p{IsLatin}\\p{Digit}&&[^-]]").next().trim().toLowerCase()); 
             }
         }
-        catch (Exception ex)  {   } 
+        catch (Exception ex){} 
         list.removeIf(x -> (x.equals("") || x.equals("-"))); 
         return list;
     }
@@ -91,10 +91,12 @@ public class ReaderWriter {
             map2.forEach((x, y) -> {
                 try {
                     pw2.write(String.format("%30s |    %-4d     |   %f\n", x, y,  y / (double)Starter.getList().size()));
+                    
                 } catch (IOException ex) {
                     Logger.getLogger(ReaderWriter.class.getName()).log(Level.SEVERE, null, ex);
                 }
             });
+            
             pw2.write(Titles.TITLE_ENDER.getTitleStr()); 
             }
         

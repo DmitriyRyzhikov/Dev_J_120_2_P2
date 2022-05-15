@@ -26,7 +26,6 @@ public enum Titles {
     
     private final String title;
     
-
     private Titles(String title) {
         this.title = title;
     }

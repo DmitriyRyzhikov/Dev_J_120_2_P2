@@ -27,6 +27,7 @@ class Starter {
 
     public static Map<String, Integer> getReport2() {
         return report2; }
+    
     //метод последовательно запускает все методы, необходимые для анализа текста      
     public static void start() throws IOException{
         

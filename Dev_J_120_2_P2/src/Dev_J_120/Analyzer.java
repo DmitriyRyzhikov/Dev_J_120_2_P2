@@ -40,6 +40,7 @@ public class Analyzer {
     }
     
     public static Map<String, Integer> sortByValues(Map<String, Integer> map){
+        
         Comparator<String> comparator = new Comparator<String>() {
             @Override
             public int compare(String o1, String o2) {
@@ -63,8 +64,7 @@ public class Analyzer {
         String t5 = Titles.TITLE_SUBHEADER_2.getTitleStr();
         System.out.println(t1+t2+t3+t4+t5);
         Starter.getReport1().forEach((x, y) -> System.out.printf("%30s |    %-4d     |   %f\n", x, y,  y / (double)Starter.getList().size()));
-        System.out.println(Titles.TITLE_ENDER.getTitleStr());
-        
+        System.out.println(Titles.TITLE_ENDER.getTitleStr());       
         String t6 = Titles.TITLE_HEADER_2.getTitleStr();
         System.out.println(t6+t2+t3+t4+t5);
         Starter.getReport2().forEach((x, y) -> System.out.printf("%30s |    %-4d    |   %f\n", x, y,  y / (double)Starter.getList().size()));
