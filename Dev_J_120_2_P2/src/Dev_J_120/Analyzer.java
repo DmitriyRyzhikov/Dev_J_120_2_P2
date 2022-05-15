@@ -58,8 +58,8 @@ public class Analyzer {
     //метод для печати отчетов в консоль. 
     public void printReports(){
         String t1 = Titles.TITLE_HEADER_1.getTitleStr();
-        String t2 = "\n     Файл: " + Starter.getTextFile();
-        String t3 = "\n     Количество слов в исходном тексте: " + Starter.getList().size();
+        String t2 = "\n    Файл: " + Starter.getTextFile();
+        String t3 = "\n    Количество слов в исходном тексте: " + Starter.getList().size();
         String t4 = Titles.TITLE_SUBHEADER_1.getTitleStr();
         String t5 = Titles.TITLE_SUBHEADER_2.getTitleStr();
         System.out.println(t1+t2+t3+t4+t5);
